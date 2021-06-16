@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="learan.css">
+</head>
+<body>
+
+    <input id="first" type="text" />
+    <input id="second" type="text" />
+    
+
+    <div id="result" style="width: 100px; height: 100px; background: red"></div>
+    <button>Apply</button>
+    <script>
+        // JavaScript
+        var p1 = document.getElementById('first')
+        var p2 = document.getElementById('second')
+        var result = document.getElementById('result')
+
+        document.querySelector('button').addEventListener('click', function() {
+            result.style.borderRadius = p1.value + 'px'
+            result.style.height = p2.value + 'px'
+        })
+
+        
+    </script>
+    <!-- <p class="touch"> please hover at Amaan</p>
+    <h1>Amaan</h1>
+    <div class="wheel"></div>
+    <hr/>
+    <div class="whee"></div>
+    <hr/>
+    <div class="whe"></div>
+    <hr/>
+    <div class="wh"></div>
+    <hr/>
+    <div class="w"></div>
+    <hr/>
+    <div class="wheels"></div>
+    <hr/>
+    <div class="wheele"></div> -->
+</body>
+</html>

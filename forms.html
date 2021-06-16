@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>form</title>
+    <link href="style.css" rel="stylesheet" />
+    
+
+</head>
+
+<body>
+    <h1>FILL THIS FORM
+        <br /> TO BUY SUBSCRIPTION
+    </h1>
+    <form>
+        <p>YOUR DETAILS</p>
+        <fieldset style="background-color: lightpink;">
+            <legend>NAME</legend>
+            <label> First Name:
+                <input type="text" placeholder="eg. Mohammad " /></label>
+            <br />
+            <br />
+            <label> Middle Name :
+                <input type="text" placeholder="eg. Amaan " size="17" /></label>
+            <br />
+            <br />
+            <label>Surname : <input type="text" placeholder="eg. Khan" size="22" /></label>
+        </fieldset>
+        <br />
+        <br />
+        <fieldset>
+            <legend>ABOUT YOU</legend>
+            <label>D O B :
+                <input type="date" />
+            </label>
+            <br />
+            <br />
+            <label> Your Age :
+                <select name="age">
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19+</option>
+                </select>
+
+            </label>
+            <br />
+            <br />
+            <label>Father's Name :
+                <input type="text" size="17" />
+            </label>
+            <br />
+            <br />
+            <label>Mother's Name :
+                <input type="text" size="16" />
+            </label>
+        </fieldset>
+        <p>FULL ADDRESS</p>
+        <fieldset>
+            <legend> ADDRESS</legend>
+            <label> District :
+                <input type="text" placeholder="eg. Azamgarh " size="23" /></label>
+            <br />
+            <br />
+            <label> Post :
+                <input type="text" placeholder="eg. Mubarakpur " size="26" /></label>
+            <br />
+            <br />
+            <label>Near : <input type="text" placeholder="eg. Masjid Fatma" size="26" /></label>
+            <br />
+            <br />
+            <label>Pin Code : <input type="text" placeholder="eg. 27XXX4" size="22" /></label>
+            <br>
+            <br>
+            <label>Country : <input type="text" placeholder="eg. India" size="23" /></label>
+        </fieldset>
+        <p>CARD DETAILS</p>
+        <fieldset>
+            <legend>CARD</legend>
+
+            <input type="radio" name="card" />VISA
+            <input type="radio" name="card" />Mastercard
+            <input type="radio" name="card" />AmFx
+            <br />
+            <br />
+            <label> Card Number:
+                <input type="text" placeholder="eg. XXXX XXXX XXXX  " size="18" required="required" /></label>
+            <br />
+            <br />
+            <label>Security Code : <input type="password" placeholder="eg. XXX" size="17" required="required" /></label>
+            <br />
+            <br />
+            <label>Name On card : <input type="text" placeholder="eg. Mohd Amaan" size="17"
+                    required="required" /></label>
+            <br>
+            <br>
+            <label>Expiry Date : <input type="date" required="required" /></label>
+        </fieldset>
+        <br />
+        <br />
+        <label>
+            <input type="checkbox" name="subscribe" required="required" />
+            I Agree With Terms And Condition
+        </label>
+        <br />
+        <br />
+        <p>ANY PROBLEM ?</p>
+        <textarea name="comments" cols="20" rows="4" placeholder="Enter Your Queries....."></textarea>
+        <br />
+        <br />
+        <input type="submit" />
+
+
+
+
+    </form>
+</body>
+
+</html>

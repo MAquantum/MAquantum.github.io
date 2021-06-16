@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            label {
+                display: block;
+            }
+            input[type="text"] {
+            
+                padding: 10px;
+                border: 1px solid lightgray;
+                border-radius: 30px;
+                outline: none;
+            }
+            h1:hover {
+                color:red;
+            }
+
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                margin-left: 20px;
+                animation: xyz 1s infinite;
+            }
+
+            
+
+            @keyframes xyz {
+                0% {
+                  transform: rotate(360deg);  
+                }
+                100% {
+                    margin-left: 400px;
+                }
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <h1>Form</h1>
+        <form action="http://my-server.com/">
+            DOB <input type="date" />
+            <fieldset>
+                <legend>Name</legend>
+                First Name <input required type="text"><br/>
+                Middle Name<input type="text"> <br/>
+                Surname <input type="text">
+            </fieldset>
+            <label>
+                Username:
+                <input type="text" name="ardas" />
+            </label>
+            <label>
+                Password: 
+                <input type="password" />
+            </label>
+            
+            <textarea>dasda</textarea>
+            <br />
+            <label for="hindi-lang">
+                Hindi
+            </label>
+            <input id="hindi-lang" type="checkbox" />
+            <label>
+                English <input type="checkbox" checked="checked" />
+            </label>
+            <br/>
+            <label>
+                Hindi <input name="language" type="radio" />
+            </label>
+            <label>
+                English <input name="language" type="radio" checked="checked" />
+            </label>
+            <br/>
+            <select multiple>
+                <option>Hindi</option>
+                <option selected>English</option>
+            </select>
+            <br/>
+            <button>Submit here</button>
+        </form>
+
+        <label>
+            <input type="password">
+        </label>
+    </body>
+</html>

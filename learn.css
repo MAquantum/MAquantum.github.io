@@ -1,0 +1,87 @@
+h1:hover{
+    color: darkblue;
+    background-color: rgb(255, 0, 0);
+    border: darkgreen solid 5px;
+    display: inline-block;
+    box-shadow: blue 10px 10px 3px;
+    
+    
+}
+div{
+    margin: 100px;
+    animation: xyz 3s infinite;
+   
+}
+.touch{
+    font-size: 20px;
+}
+
+.wheel{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: blue solid 2px;
+    margin-top: 150px;
+    border-radius: 100px;
+}
+.whee{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: blue solid 2px;
+    margin-top: 150px;
+    border-bottom-left-radius: 50px;
+}
+.whe{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: blue solid 2px;
+    margin-top: 150px;
+    border-bottom-right-radius: 50px;
+}
+.wh{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: blue solid 2px;
+    margin-top: 150px;
+    border-top-left-radius: 50px;
+}
+.w{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: blue solid 2px;
+    margin-top: 150px;
+    border-top-right-radius: 50px;
+}
+.wheels{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: blue solid 2px;
+    margin-top: 150px;
+    
+}
+.wheele{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: blue solid 2px;
+    margin-top: 150px;
+    border-radius: 30px;
+}
+
+@keyframes xyz {
+    0% {
+      transform: rotate(360deg);  
+    }
+    100% {
+        margin-left: 700px;
+    }
+}
+
+
+
+
