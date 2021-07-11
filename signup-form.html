@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup-form</title>
+    <style>
+        *{
+            padding:0 ;
+            margin: 0;
+        }
+        body{
+            background-color: #f3f2fd;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            background-color: white;
+            width: 60%;
+            display: grid;
+            grid-gap: 10px;
+            margin-top: 10px;
+            grid-template-columns: 1fr 1fr;
+            padding: 30px;
+        }
+        .main-1{
+            background: linear-gradient(149deg,#ba91e9,#6d58ce);
+            padding: 30px;
+            color: white;
+            border-radius: 5px;
+        }
+       
+        .main-2 div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        i , .main-1 p{
+            margin-bottom: 15px;
+        }
+        .main-1 h2{
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    
+    .main-1 :last-child{
+        margin-bottom: 140px;
+    }
+    .main-2 h2{
+        color: gray;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .main-2 input{
+        padding: 7px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    .main-2 label{
+        color: gray;
+        margin-bottom: 2px;
+    }
+    
+    button{
+        width: 100%;
+        padding: 7px;
+        border-radius: 5px;
+        border: none;
+        background-color: #6e59ce;
+        color: white;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+        cursor: pointer;
+    }
+   
+    .sub-main{
+        width: 70%;
+        margin-left: 20px;
+    }
+    @media (max-width:360px) and (max-height:640px){
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+      .main-1 :last-child{
+        margin-bottom: 10px;
+      }
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-1">
+            <i class="fa fa-check-circle"></i>
+            <h2>Quick and free sign-up</h2>
+            <p>Enter your email address to create an account</p>
+            <i class="fa fa-check-circle"></i>
+            <h2>Cross-platform solution</h2>
+            <p>Preview your newsletters on any device before sending them out</p>
+            <i class="fa fa-check-circle"></i>
+            <h2>Start sending emails</h2>
+            <p>Use your API or pick our pre-built templates</p>
+        </div>
+        <div class="main-2">
+            <div class="sub-main">
+                <form>
+                    <h2>create your account</h2>
+                    <div>
+                        <label for="email">Email</label>
+                        <input name="email" type="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div>
+                        <label for="name">Full name</label>
+                        <input name="name" type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div>
+                        <label for="password">password</label>
+                        <input name="password" type="password" placeholder="Type to create a password" required>
+                    </div>
+                    <div class="checkbox-col">
+                        <input type="checkbox" checked>
+                        <label>updates and notification about our products</label>
+                    </div>
+                    <button>Create your account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

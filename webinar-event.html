@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar event</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 0.8fr;
+
+
+        }
+
+        .main-1 {
+            background: linear-gradient(#e55d87, #5fc3e4);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-left: 16%;
+            margin-right: 10%;
+        }
+
+
+        .about-page {
+            margin-left: 16%;
+            margin-right: 10%;
+        }
+
+        .form-1,
+        .form-2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-2 {
+            background-color: #8b8c8f;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .date {
+            margin-top: 20px;
+        }
+
+        .main-1 h2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .main-1 p {
+            font-size: 18px;
+        }
+
+        input,
+        textarea,
+        select {
+            padding: 8px;
+            border: none;
+            margin-bottom: 12px;
+        }
+
+        .main-1 button {
+            width: 180px;
+            height: 50px;
+            border: none;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 5px rgb(0 0 0 / 70%);
+            cursor: pointer;
+            margin-top: 12px;
+        }
+
+        .figma {
+            display: flex;
+            background-color: rgb(226, 225, 225);
+            width: 130px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            align-self: flex-end;
+            margin-top: 25px;
+            margin-right: 25px;
+            box-shadow: 0 3px 5px rgb(0 0 0 / 70%);
+        }
+
+        .figma img {
+            margin-right: 10px;
+        }
+        .links{
+            margin-left: 40px;
+        }
+        .links a{
+            margin-right: 20px;
+
+        }
+        .links p {
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            
+        }
+        .guests-section{
+            margin-top: 70px;
+            margin-left: 20px;
+        }
+        .guests-section h2{
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+        .guests-section img{
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .guest-tile{
+            display: flex;
+            margin-bottom: 15px;
+            /* color: gray; */
+        }
+        .host{
+            margin-top: 30px;
+        }
+        @media (min-width:1300px){
+            .both-form{
+                display: flex;
+            }
+            .main-1 input[type="text"],.main-1 input[type="email"],.main-1 select{
+                margin-right: 10px;
+                width: 270px;
+            }
+            .main-1 select{
+                width: 285px;
+                padding: 7px;
+            }
+        }
+        @media (max-width:360px) and (max-height:640px){
+            .container{
+                display: flex;
+                flex-direction: column;
+
+            }
+            .main-1 , .main-2{
+                width: 100%;
+            }
+            .main-2{
+                padding-bottom: 100px;
+            }
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-1">
+            <div class="about-page">
+                <p class="date">April 1, 2021 12:00</p>
+                <h2>
+                    The help of Augmented Reality and Holograms
+                </h2>
+                <p>
+                    Use of Augmented Reality to keep students engaged and provide detailed explanations of modals and
+                    course material.
+
+                </p>
+                <p>In a 3D, AR Lab, students can pinch, zoom, and rotate equipment related to the course, for a fully
+                    immersive learning experience.</p>
+
+            </div>
+            <form>
+                <h2>Join the event</h2>
+                <div class="both-form">
+                    <div class="form-1">
+                        <label>First name</label>
+                        <input type="text" placeholder="Enter your first name" required>
+                        <label>Last name</label>
+                        <input type="text" placeholder="Enter your last name" required>
+                        <label for="email">Business email</label>
+                        <input name="email" type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-2">
+                        <label>Title</label>
+                        <input type="text" placeholder="What is your job title?" required>
+                        <label>Company name</label>
+                        <input type="text" placeholder="Where do you work?" required>
+                        <label>Company size</label>
+                        <select required>
+                            <option disabled selected value>Select</option>
+                            <option>small</option>
+                            <option>medium</option>
+                            <option>large</option>
+                        </select>
+                    </div>
+                </div>
+                <label>What are you hoping to learn about?</label>
+                <textarea cols="30" rows="7" placeholder="Text about..."></textarea>
+                <label><input type="checkbox" required> I would like to receive email about future webinars</label>
+                <button>Register for this event</button>
+            </form>
+        </div>
+        <div class="main-2">
+            <div class="figma">
+                <img src="figma.png" width="20px" height="25px" alt="figma">
+                <p>Figma</p>
+            </div>
+
+            <div class="links">
+                <p>Share</p>
+                <a href="https://www.facebook.com/sharer"><i class="fab fa-facebook-f feature-icon "></i></a>
+                <a href="https://twitter.com0/share"><i class="fab fa-twitter feature-icon"></i></a>
+                <a href="https://www.instagram.com/share"><i class="fab fa-instagram feature-icon" style="color: blue;"></i></a>
+            </div>
+            <div class="guests-section">
+                <h2>Guests</h2>
+                <div class="guest-tile">
+                    <img src="arfat.jpeg" width="55px" height="55px" alt="arfat">
+                    <div class="about-guest">
+                        <h3>Arfat Salman</h3>
+                        <p>Python educator</p>
+                    </div>
+                </div>
+                <div class="guest-tile">
+                    <img src="arfat.jpeg" width="55px" height="55px" alt="arfat">
+                    <div class="about-guest">
+                        <h3>Arfat Salman</h3>
+                        <p>Java educator</p>
+                    </div>
+                </div>
+                <div class="guest-tile">
+                    <img src="arfat.jpeg" width="55px" height="55px" alt="arfat">
+                    <div class="about-guest">
+                        <h3>Arfat Salman</h3>
+                        <p>Software developer</p>
+                    </div>
+                </div>
+                <h2 class="host">Hosted by</h2>
+                <div class="guest-tile">
+                    <img src="amaan.jpg" width="55px" height="55px" alt="arfat">
+                    <div class="about-guest">
+                        <h3>Mohammad Amaan</h3>
+                        <p>Web developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

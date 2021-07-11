@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <style>
+        body {
+            background-color: #45567d;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar {
+            width: 100%;
+            background-color: rgb(211, 65, 65);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            border-bottom: solid 2px black;
+
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+
+            font-size: x-large;
+            padding: 20px;
+
+        }
+
+        .about:hover,
+        .work:hover,
+        .contact:hover {
+            background-color: teal;
+        }
+
+        .project-tile figcaption {
+            padding: 10px;
+            text-align: center;
+            background-color: #303841;
+            color: white;
+            margin-bottom: 10px;
+            font-size: 25px;
+            font-weight: 60;
+
+        }
+
+        .project-tile {
+            /* background-color: cadetblue; */
+            margin-left: 10px;
+            margin-right: 10px;
+            box-sizing: border-box;
+            width: calc((100% - 60px) / 3);
+        }
+
+        .project-tile img {
+            width: 100%;
+            /* width: 100vh; */
+
+
+        }
+
+        .project-tile a {
+            display: inline-block;
+        }
+
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #45567d;
+        }
+
+        #welcome-section {
+            background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #welcome-section h1 {
+            color: white;
+            font-size: 60px;
+
+        }
+
+        #welcome-section p {
+            color: rgb(124, 43, 43);
+            font-size: 35px;
+        }
+
+        .heading-project {
+            background-color: #45567d;
+            color: rgb(238, 232, 232);
+            font-size: 40px;
+            margin-top: 70px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            padding: 10px;
+            font-family: sans-serif;
+
+        }
+
+        figure {
+            margin-bottom: 30px;
+        }
+
+        figure a {
+            text-decoration: none;
+        }
+
+        .code {
+            color: #303841;
+            transition: color 0.3s ease-out;
+        }
+
+        .project-tile:hover .code {
+            color: #ff7f50;
+        }
+
+        #contact {
+            height: 75vh;
+            background-color: #303841;
+            border-bottom: 4px solid rgb(155, 41, 41);
+        }
+
+
+
+
+        .contact-section-header>h2 {
+            font-size: 60px;
+            text-align: center;
+            color: white;
+            padding-top: 70px;
+        }
+
+
+        .contact-section-header>p {
+            font-style: italic;
+            color: white;
+            text-align: center;
+            font-size: x-large;
+            padding-top: 10px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            /* max-width: 980px; */
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+        }
+
+        .contact-details {
+            font-size: 2.4rem;
+            text-shadow: 2px 2px 1px #1f1f1f;
+            color: white;
+            font-size: 30px;
+            transition: transform 0.3s ease-out;
+        }
+
+        .contact-details:hover {
+            transform: translateY(8px);
+        }
+
+        #footer {
+            background-color: #303841;
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #footer p {
+            color: white;
+            font-size: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 2px;
+        }
+
+        @media (max-width:670px) {
+
+            .project-tile {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a class="about" href="#welcome-section">About</a>
+        <a class="work" href="#projects">Work</a>
+        <a class="contact" href="#contact">Contact</a>
+    </nav>
+    <section id="welcome-section">
+        <h1>
+            Hey I am Amaan
+        </h1>
+        <p>a web developer</p>
+    </section>
+    <h2 class="heading-project">These are some of my projects</h2>
+    <section id="projects">
+        <div class=" project-tile">
+            <figure>
+                <a href="https://codepen.io/amaaaan/pen/QWvydWK">
+                    <img src="https://i.imgur.com/hpu6qMi.png" alt="tribute-page-ss">
+                    <figcaption>
+                        <span class="code">&lt;</span>
+                        Tribute Page
+                        <span class="code">&#47;&gt;</span>
+                    </figcaption>
+                </a>
+            </figure>
+
+
+        </div>
+        <div class="project-tile">
+            <figure>
+                <a href="https://codepen.io/amaaaan/pen/vYmLgLq">
+                    <img src="https://i.imgur.com/BfHYUn2.png" alt="documentation-page-ss">
+                    <figcaption>
+                        <span class="code">&lt;</span>
+                        Documentation Page
+                        <span class="code">&#47;&gt;</span>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+        <div class="project-tile">
+            <figure>
+                <a href="https://codepen.io/amaaaan/pen/poPgREw">
+                    <img src="https://i.imgur.com/5kjepje.png" alt="enrollment-form-ss">
+                    <figcaption>
+                        <span class="code">&lt;</span>
+                        Enrollment Form
+                        <span class="code">&#47;&gt;</span>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+        <div class="project-tile">
+            <figure>
+                <a href="https://codepen.io/amaaaan/pen/jOmWyym">
+                    <img src="https://i.imgur.com/FaoVkh0.png" alt="landing-page-ss">
+                    <figcaption>
+                        <span class="code">&lt;</span>
+                        Landing Page
+                        <span class="code">&#47;&gt;</span>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+        <div class="project-tile">
+            <figure>
+                <a href="https://codepen.io/amaaaan/pen/YzVwNZm">
+                    <img src="https://i.imgur.com/wFTlP74.png" alt="signup-form-ss">
+                    <figcaption>
+                        <span class="code">&lt;</span>
+                        Signup Form
+                        <span class="code">&#47;&gt;</span>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+        <div class="project-tile">
+            <figure>
+                <a href="https://codepen.io/amaaaan/pen/ZEKQLyr">
+                    <img src="https://i.imgur.com/rr3wtrf.png" alt="statistics-page-ss">
+                    <figcaption>
+                        <span class="code">&lt;</span>
+                        Statistics Page
+                        <span class="code">&#47;&gt;</span>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-section-header">
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+            <a href="https://facebook.com/freecodecamp" target="_blank" class="btn contact-details"><i
+                    class="fab fa-facebook-square"></i> Facebook</a>
+            <a id="profile-link" href="https://github.com/MAquantum/MAquantum.github.io" target="_blank"
+                class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details"><i
+                    class="fab fa-twitter"></i> Twitter</a>
+            <a href="mail-to:mohdamaan5624@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a
+                mail</a>
+            <a href="tel:555-555-5555" class="btn contact-details"><i class="fa fa-mobile"></i> Call me</a>
+        </div>
+    </section>
+    <section id="footer">
+        <p>
+            **This is just a fake portfolio. All the projects and contact details given
+            are not real.
+        </p>
+        <p>
+            &copy; Created for
+            <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i
+                    class="fab fa-free-code-camp"></i></a>
+        </p>
+    </section>
+</body>
+
+
+</html>

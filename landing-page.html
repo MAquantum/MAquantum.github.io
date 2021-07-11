@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>landing-page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: 'Oswald';
+        }
+
+        header {
+            margin-top: 20px;
+            display: flex;
+        }
+
+        header>img {
+            width: 330px;
+        }
+
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            font-family: 'Oswald';
+            font-size: 0.9rem;
+
+        }
+
+        .call-to-action , form {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+
+        }
+
+        input[type="email"] {
+            height: 30px;
+            width: 300px;
+            padding: 5px;
+        }
+
+         input[type="submit"] {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 10px;
+            background-color: #e84545;
+            color: white;
+            border: none;
+            font-family: 'Oswald';
+            cursor: pointer;
+
+        }
+
+        #nav-bar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            font-family: 'Oswald';
+            flex-direction: row-reverse;
+
+        }
+
+        #nav-bar>a {
+            color: black;
+            text-decoration: none;
+            margin-right: 40px;
+        }
+
+        .features>i {
+            width: 8%;
+            margin-left: 15px;
+            margin-right: 20px;
+            color: orangered;
+
+        }
+
+        .features {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .heading-of-features{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .features-written {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #how-it-works {
+            display: flex;
+            justify-content: center;
+        }
+        #pricing{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #pricing>div{
+            width: 30%;
+            margin-top: 30px;
+            border: 1px solid black;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            justify-content: space-evenly;
+
+        }
+        #pricing>div>p , #pricing>div>h4 , #pricing>div>button{
+            margin-bottom: 2px;
+        }
+        #pricing>div>button{
+            background-color: #e84545;
+            color: white;
+            border: none;
+            font-family: 'Oswald';
+            width: 32%;
+            height: 30px;
+            font-size: large;
+            cursor: pointer;
+        }
+        footer{
+            margin-top: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            background-color: lightgray;
+            
+        }
+        .anchor-foot{
+            
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        .para-foot{
+            display: flex;
+            
+        }
+        .anchor-foot>a{
+            padding-left: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        @media (max-width:360px) and (max-height:640px){
+            footer{
+                display: none;
+            }
+        }
+       
+
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <img  id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt=" logo of original trombone">
+
+        
+            <nav id="nav-bar">
+                <a class="nav-link"  href="#pricing">Pricing</a>
+                <a class="nav-link" href="#how-it-works">How it works</a>
+                <a class="nav-link" href="#feature">Features</a>
+            </nav>
+        
+
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Handcrafted, home-made masterpieces</h1>
+            
+                <form  action=" https://www.freecodecamp.com/email-submit" id="form" >
+                    <input  id="email" type="email" placeholder="Enter your Email address " required>
+                    <input id="submit" type="submit" >
+                </form>
+            
+        </div>
+        <section id="feature">
+            <div class="features">
+               <i class="fa fa-3x fa-fire"></i>
+                <div class="heading-of-features">
+                    <div class="features-written">
+                        <h2>Premium Materials</h2>
+                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
+                            of your purchase.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <i class="fa fa-3x fa-truck"></i>
+                <div class="heading-of-features">
+                    <div class="features-written">
+                        <h2>Fast Shipping</h2>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it .
+                             We also provide
+                            free returns .</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <i class="fa fa-3x fa-battery-full"></i>
+                <div class="heading-of-features">
+                    <div class="features-written">
+                        <h2>Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                            test the pitch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;
+              controls=0&amp;showinfo=0" frameborder="0" width="520" height="315">
+            </iframe>
+        </section>
+        <section id="pricing">
+            <div>
+               <h4> TENOR TREMBONE</h4>
+                <h1>$600</h1>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum dolor</p>
+                <p>lorem ipsum</p>
+                <button>select</button>
+
+            </div>
+            <div>
+               <h4> BASS TROMBONE</h4>
+                <h1>$900</h1>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum dolor</p>
+                <p>lorem ipsum</p>
+                <button>select</button>
+            </div>
+            <div>
+               <h4> VALVE TROMBONE</h4>
+                <h1>$1200</h1>
+                <p>Plays Similar</p>
+                <p>Great for Jazz Bands</p>
+                <p>lorem ipsum dolor</p>
+                <p>lorem ipsum</p>
+                <button>select</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="anchor-foot">
+            <a href="#">Contacts</a>
+           <a href="#">Terms</a>
+           <a href="#">Privacy</a>
+        </div>
+        <div class="para-foot">
+            <p>Copyright 2016, original trombones </p>
+        </div>
+       
+    </footer>
+</body>
+
+</html>

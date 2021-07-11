@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRG Portal Signup</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+        }
+        .container{
+           
+            display: flex;
+            justify-content: center;
+            background-color:#eef3f9;
+
+        }
+        .signup-container{
+            margin-top: 40px;
+            width: 600px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            
+            
+            
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 215px;
+            width: 100%;
+            background-color: #20225e;
+            
+            
+        }
+        h1{
+            color: white;
+           
+        }
+        .form-control{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+            margin-top: 70px;
+            padding-top: 60px;
+            
+        }
+        input{
+            border: none;
+            outline: none;
+            padding: 8px;
+            border-bottom: 1px solid gray;
+            padding-left: 0;
+            margin-bottom: 40px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            height: 400px;
+            width: 100%;
+            
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            width: 100%;
+            height: 650px;
+        }
+        button{
+            width:240px ;
+            height:80px ;
+            font-size: large;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            background-color: #20225e;
+            box-shadow: 0 20px 20px -16px rgb(2 6 127 / 35%);
+        }
+        @media (max-height:640px) and (max-width:360px ){
+            .form-control{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                margin-left: 40px;
+
+            }
+            .container{
+                background-color: white;
+            }
+            
+            header{
+                width: 280px;
+                margin-left: 10px;
+            }
+            input{
+                width: 70%;
+            }
+            .button{
+                padding: 0;
+                margin: 0;
+                
+                
+                
+            }
+            button{
+                margin: 0px 0px 0px 0px;
+                width: 180px;
+                height: 70px;
+            }
+
+            form{
+                display: flex;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signup-container">
+            <header>
+                <h1>KRG Student Portal Signup</h1>
+            </header>
+            <form>
+                <div class="form-control">
+                    <label for="full name">Full Name</label>
+                    <input  name="full name" type="text" required>
+                    <label for="Email">Email</label>
+                    <input  name="Email" type="email" required>
+                    <label for="password">Password</label>
+                    <input  name="password" type="password" required>
+                   
+                </div>
+                <div class="button">
+                    <button>Signup</button>
+                </div>
+               
+            </form>
+        </div>
+    </div>
+</body>
+</html>

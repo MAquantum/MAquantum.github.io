@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <style>
+        h1 {
+            width: 1350px;
+            height: 70px;
+            font-size: 45px;
+            text-align: center;
+            margin: 0px;
+            margin-top: 35px;
+        }
+
+        .sub-head {
+            height: 25px;
+            width: 1350px;
+            font-size: 25px;
+            text-align: center;
+            margin: 0px;
+
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        fieldset {
+            width: 950px;
+            height: 152;
+            background-color: rgb(12, 12, 49);
+            margin-top: 35px;
+            border-radius: 5px;
+            padding-left: 40px;
+            padding-top: 20px;
+            font-size: 23px;
+            font-weight: bold;
+
+            opacity: 0.8;
+            border: 0px;
+
+
+
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-image: linear-gradient(115deg,
+                    rgba(58, 58, 158, 0.8),
+                    rgba(136, 136, 206, 0.7)),
+                url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        body {
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .name {
+
+            width: 900px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            padding: 8px;
+        }
+
+        .email {
+
+            width: 900px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            padding: 8px;
+        }
+
+        .age {
+
+            width: 900px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            padding: 8px;
+        }
+
+        .option {
+
+            width: 910px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            padding: 8px;
+        }
+
+        input[type="checkbox"] {
+            height: 20px;
+            width: 20px;
+        }
+
+        .checkbox-cont {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label-element {
+            margin-bottom: 15px;
+        }
+
+        .text-area {
+            height: 100px;
+            width: 905px;
+            border-radius: 5px;
+            margin-bottom: 35px;
+        }
+
+        button {
+            height: 55px;
+            width: 905px;
+            background-color: lightgreen;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            freeCodeCamp Survey Form
+        </h1>
+        <p class="sub-head">Thank you for taking the time to help us improve the platform</p>
+        <div class="div-form">
+            <form>
+                <fieldset>
+                    <p>Name</p>
+                    <input class="name" type="text" placeholder="Enter your name" required>
+                    <p>Email</p>
+                    <input class="email" type="text" placeholder="Enter your Email" required>
+                    <p>Age (optional)</p>
+                    <input class="age" type="number" placeholder="Age" required>
+                    <p>Which option best describes your current role?</p>
+                    <select class="option" required>
+                        <option disabled selected value>Select current role</option>
+                        <option>student</option>
+                        <option>full time job</option>
+                        <option>full time learner</option>
+                        <option>prefer not to say</option>
+                        <option>other</option>
+
+                    </select>
+                    <p>Would you recommend free code camp to a friend?</p>
+                    <input name="all-not" type="radio"> Definitely
+                    <br />
+
+                    <input name="all-not" type="radio"> May be
+                    <br />
+
+                    <input name="all-not" type="radio"> Not sure
+                    <p>What is your favourite feature of free code camp?</p>
+                    <select class="option" required>
+                        <option disabled selected value>Select current role</option>
+                        <option>challenges</option>
+                        <option>projects</option>
+                        <option>community</option>
+                        <option>open source</option>
+                        <option>other</option>
+                    </select>
+
+                    <p>Would you like to see improved? (check all that apply)
+
+                    </p>
+                    <div class="checkbox-cont">
+                        <label class="label-element">
+                            <input type="checkbox" checked>Front-end projects</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked>back-end projects</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked> Data visualization</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked>challenges</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked>Open source community</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked>Gitter help rooms</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked>Videos</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked>City Meetups</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked>Wiki</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked>Forum</label>
+                        <label class="label-element">
+                            <input type="checkbox" checked>Additional courses</label>
+
+
+
+                    </div>
+                    <p>Any comment or suggestion?</p>
+                    <textarea class="text-area" name="comment" cols="30" rows="8"
+                        placeholder="Enter your comment here.."></textarea>
+                    <br />
+                    <button type="submit">submit</button>
+
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

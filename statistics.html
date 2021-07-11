@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>statistics</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            margin-top: 25px;
+            border: 2px solid black;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 96%;
+            background-color: #DDDDDD;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            padding-top: 10px;
+        }
+
+        header input {
+            width: 60%;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding: 7px;
+            border: none;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+
+        }
+
+        .coloured-boxes,
+        .uncoloured-boxes {
+            width: 100%;
+            display: flex;
+            margin-bottom: 20px;
+
+        }
+        .box-1,.box-2,.box-3{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-1,
+        .box-3 {
+            width: 90%;
+            background-color: #ffc7c7;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 20px;
+            border-radius: 7px;
+            flex: 1;
+           
+        }
+
+        .box-2 {
+            background-color: #FFE2E2;
+            padding: 20px;
+            border-radius: 7px;
+            flex: 1;
+           
+        }
+
+        .coloured-boxes .for-name,
+        .uncoloured-boxes .for-name {
+            margin-bottom: 18px;
+        }
+
+        .coloured-boxes .for-details,
+        .uncoloured-boxes .for-details {
+            margin-bottom: 30px;
+        }
+
+        .coloured-boxes button,
+        .uncoloured-boxes button {
+            background-color: #ffc7c7;
+            border-radius: 10px;
+            border: 1px solid gray;
+            padding: 10px;
+
+        }
+
+        .box-2 button {
+            background-color: #FFE2E2;
+        }
+
+        .uncoloured-boxes .box-1,
+        .uncoloured-boxes .box-2,
+        .uncoloured-boxes .box-3 {
+            background-color: white;
+        }
+
+        .uncoloured-boxes button {
+            background-color: white;
+        }
+
+        .uncoloured-boxes a {
+            text-decoration: none;
+            color: red;
+        }
+        @media (max-height:640px) and (max-width:360px){
+            .container{
+                width: 90%;
+            }
+            .coloured-boxes , .uncoloured-boxes{
+                display: flex;
+                flex-direction: column;
+            }
+            .box-1 , .box-2 , .box-3{
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>search for statistics</h1>
+            <input type="text" placeholder="enter any keyword">
+        </header>
+        <div class="coloured-boxes">
+            <div class="box-1">
+                <div style="flex-grow: 1;">
+                    <p class="for-name">Price calculator</p>
+                    <p class="for-details">How much does 1 Eur in 1963 equal in today's prices? Adjust the rent?</p>
+                </div>
+                <button>Calculate price changes</button>
+            </div>
+            <div class="box-2">
+                <div style="flex-grow: 1;">
+                    <p class="for-name">Name statistics</p>
+                    <p class="for-details">How much does 1 Eur in 1963 equal in today's prices? Adjust the rent?</p>
+                </div>
+                <button>search by name</button>
+            </div>
+            <div class="box-3">
+                <div style="flex-grow: 1;">
+                    <p class="for-name">Stats table</p>
+                    <p class="for-details">Find detailed tables with time and create your own.</p>
+                </div>
+                <button>Go to tables</button>
+            </div>
+
+        </div>
+
+        <div class="uncoloured-boxes">
+            <div class="box-1">
+                <div style="flex-grow: 1;">
+                    <p class="for-name">Calendar</p>
+                    <p class="for-details">See the advance release of calendars in 2021</p>
+                </div>
+                <button><a href="#">Go to Calendar</a></button>
+            </div>
+            <div class="box-2">
+                <div style="flex-grow: 1;">
+                    <p class="for-name">Subscribe to news</p>
+                    <p class="for-details">Get the latest statistics releases and publications by e-mail</p>
+                </div>
+                <button><a href="#">Recieve e-mail alerts</a></button>
+            </div>
+            <div class="box-3">
+                <div style="flex-grow: 1;">
+                    <p class="for-name">API</p>
+                    <p class="for-details">Easily retrieve and integrate statistics with your own system</p>
+                </div>
+                <button><a href="#">Open API</a></button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

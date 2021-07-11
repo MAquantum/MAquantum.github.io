@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 650px;
+            width: 650px;
+            border: 2px solid black
+        }
+
+        .new-tab {
+            height: 20px;
+            width: 220px;
+            padding-left: 3px;
+            border-top: 2px solid black;
+
+            border-bottom-right-radius: 5px;
+        }
+
+        .both-tab {
+            display: flex;
+
+        }
+
+        .tab {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 20px;
+            width: 430px;
+
+            border-bottom-left-radius: 5px;
+            background-color: rgb(51, 49, 49);
+        }
+
+        .but-1 {
+
+            height: 15px;
+            width: 15px;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+
+        .but-2 {
+            height: 15px;
+            width: 15px;
+            background-color: white;
+
+
+        }
+
+        .but-3 {
+            height: 15px;
+            width: 15px;
+            background-color: white;
+            box-shadow: 1.8px 1.8px 0px white;
+
+
+        }
+
+        .all-but {
+            margin-right: 5px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            height: 15px;
+            width: 90px;
+
+        }
+
+        .but-1:hover {
+            background-color: rgb(175, 170, 170);
+            cursor: pointer;
+        }
+
+        .but-2:hover {
+            background-color: rgb(175, 170, 170);
+            cursor: pointer;
+        }
+
+        .but-3:hover {
+            background-color: rgb(175, 170, 170);
+            cursor: pointer;
+        }
+
+        .search-div {
+            margin-top: 2px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-box {
+            width: 480px;
+            border: 1.8px solid rgb(4, 4, 185);
+            border-radius: 20px;
+            outline: none;
+        }
+
+        .but-a {
+            height: 15px;
+            width: 15px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .but-ab {
+            height: 15px;
+            width: 15px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .all-but-2 {
+
+            width: 90px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .but-a:hover {
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        .but-ab:hover {
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-bar {
+
+            display: flex;
+            margin-top: 8px;
+            height: 25px;
+            width: 650px;
+            border-bottom: 1px solid navy;
+        }
+
+        .nav-1 {
+            padding-right: 25px;
+            padding-left: 5px;
+        }
+
+        .nav-1:hover {
+            cursor: pointer;
+            background-color: lightgray;
+
+        }
+
+        .cont-2 {
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 570px;
+            width: 650px;
+
+
+        }
+
+        .google {
+            width: 500px;
+            height: 45px;
+            border-radius: 50px;
+            outline: none;
+            border-color: gray;
+            box-shadow: 3px 3px 0px lightgrey;
+            font-size: large;
+        }
+
+        img {
+            margin-right: 15px;
+
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            height: 120px;
+
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            flex-grow: 1;
+            margin-right: 3px;
+            
+        }
+
+        .circle-wrapper {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .whole {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .card:hover {
+            background-color: lightgray;
+            border-radius: 15px;
+        }
+        .text{
+            color: black;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="both-tab">
+            <div class="new-tab">New Tab</div>
+            <div class="tab">
+                <div class="all-but">
+                    <button class="but-3"></button>
+                    <button class="but-2"></button>
+                    <button class="but-1"></button>
+                </div>
+            </div>
+        </div>
+        <div class="search-div">
+            <div class="all-but-2">
+                <button class="but-a"></button>
+
+                <button class="but-a"></button>
+                <button class="but-a"></button>
+            </div>
+            <input class="search-box" type="search" placeholder=" G" />
+            <div class="all-but-2">
+                <button class="but-a"></button>
+                <button class="but-ab"></button>
+                <button class="but-a"></button>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-1"><a href="https://www.apps.com">Apps</a></div>
+            <div class="nav-1"><a href="https://accounts.google.com">Gmail</a></div>
+            <div class="nav-1"><a href="https://www.YouTube.com">YouTube</a> </div>
+           
+            <div class="nav-1"><a href="https://maps.google.com">Maps</a></div>
+        </div>
+        <div class="cont-2">
+
+            <img src="google-logo.jpg" alt="logo" height="150px" width="300px" />
+
+            <input class="google" type="search" placeholder="  Search Google or type a URL" />
+
+            <div class="whole">
+                <a href="https://www.YouTube.com">  <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="youtube.jpg" alt="youtube" class="circle">
+                    </div>
+                    <div class="text">YouTube</div>
+                </div></a>
+                <a href="https://github.com">  <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="github.jpg" alt="github" class="circle">
+                    </div>
+                    <div class="text">GitHub</div>
+                </div></a>
+                <a href="https://codewithsakshi.github.io"> <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="c.jpg" alt="c" class="circle">
+                    </div>
+                    <div class="text">Sakshi Mittal</div>
+                </div></a>
+                <a href="https://www.freecodecamp.org">  <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="freecod.jpg" alt="fcc" class="circle">
+                    </div>
+                    <div class="text">Learn to Code</div>
+                </div></a>
+                <a href="https://maquantum.github.io">   <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="m-logo.jpg" alt="m" class="circle">
+                    </div>
+                    <div class="text">MAquantum</div>
+                </div></a>
+            </div>
+            <div class="whole">
+                <a href="https://accounts.google.com">    <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="email.jpg" alt="email" class="circle">
+                    </div>
+                    <div class="text">E-mail</div>
+                </div></a>
+                <a href="https://www.htmlandcssbook.com/code-samples/">  <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="html.jpg" alt="html" class="circle">
+                    </div>
+                    <div class="text">HTML & CSS</div>
+                </div></a>
+                <a href="/form.html"> <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="doc.jpg" alt="doc" class="circle">
+                    </div>
+                    <div class="text">Document</div>
+                </div></a>
+                <a href="https://arfat.dev">    <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="a.jpg" alt="a" class="circle">
+                    </div>
+                    <div class="text">Arfat Salman</div>
+                </div></a>
+                <a href="#">    <div class="card">
+                    <div class="circle-wrapper">
+                        
+                        <img src="plus.jpg" alt="plus" class="circle">
+                    </div>
+                    <div class="text">Add Shortcut</div>
+                </div></a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
