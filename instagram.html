@@ -16,7 +16,6 @@
             display: flex;
             width: 800px;
             height: 1000px;
-            /* background-color: lightgreen; */
         }
         .chat-section{
             
@@ -24,13 +23,11 @@
             border-bottom: solid 2px gray;
             border-right: solid 2px gray;
             width:320px ;
-            /* background-color: mediumorchid; */
         }
         .card{
             border: 2px solid gray;
             width: 480px;
             height: 1000px;
-            /* background-color: lightgrey; */
 
         }
         .profile{
@@ -38,7 +35,6 @@
             align-items: center;
             width: 470px;
             height: 50px;
-            /* background-color: lightpink; */
             padding-left: 10px;
         }
         
@@ -51,27 +47,26 @@
         .image{
             width: 480px;
             height: 620px;
-            /* background-color: lightseagreen; */
         }
         .like{
             display: flex;
             
             width: 480px;
             height:40px ;
-            /* background-color: lightslategray; */
+        }
+        #like-img{
+            margin-right: 60%;
         }
         .write{
             
             width: 480px;
             height: 250px;
-            /* background-color: linen; */
         }
         .comment{
             display: flex;
             align-items: center;
             width: 480px;
             height: 40px;
-            /* background-color: mediumaquamarine; */
         }
         .write > img{
             border-radius: 50%;
@@ -82,7 +77,6 @@
             align-items: center;
             width: 320px;
             height: 100px;
-            /* background-color: mediumpurple; */
         }
         .peoples > img{
             border-radius: 50%;
@@ -92,14 +86,31 @@
         .image-save{
             margin-top: 5px;
         }
-          @media (max-width:450px) {
-            .peoples{
-                /* background-color: rebeccapurple; */
+        @media (max-width:450px) {
+            
+            .card{
                 width: 100%;
             }
             .container{
                 width: 100%;
             }
+            .chat-section{
+                
+                display: none;
+            }
+            
+            #like-img{
+                margin-right: 38%;
+            }
+            #back-img{
+                width: 79%;
+            }
+            .maham-ash{
+                display: none;
+            }
+            
+            
+            
         
         }
         
@@ -111,9 +122,9 @@
        
         <div class="card">
             <div class="profile"><img src="mypic.jpg" alt="pic" width="40px" height="40px">Mohd_Amaan_995</div>
-            <div class="image"><img src="background.jpg" alt="img" width="480px" height="620px"></div>
+            <div class="image"><img id="back-img" src="background.jpg" alt="img" width="480px" height="620px"></div>
             <div class="like">
-                <img src="like-2.jpg" alt="like" width="160px" height="50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img id="like-img" src="like-2.jpg" alt="like" width="160px" height="50px">
              
               
               <img  class="image-save"src="save.jpg" alt="save" width="30px" height="30px">
@@ -123,7 +134,7 @@
                 &nbsp; <img src="mypic.jpg" alt="pic" width="20px" height="20px">
                  &nbsp; Liked by Mohd_Amaan_995 & 120 others
                 <br/>
-                &nbsp; my first instagram page plzz follow and Liked
+                &nbsp; my first instagram page plzz follow and Like
                 <br/>
                 &nbsp;  #love 
                 &nbsp; #beautiful 
@@ -139,7 +150,7 @@
                 <br/>
                 &nbsp;  <b>anam-ashrafi123</b>&nbsp; mashaallah bro..
                 <br/>
-                &nbsp; <b>Mohd_Amaan_995</b>thanks @anam-ashrafi123 & @maham-ashrafi
+                &nbsp; <b>Mohd_Amaan_995</b>thanks @anam-ashrafi123<spam class="maham-ash"> & @maham-ashrafi</spam>
                 <br/>
                 
                 <br/>
