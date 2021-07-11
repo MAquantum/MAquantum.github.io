@@ -15,7 +15,9 @@
 
         .container {
             height: 650px;
-            width: 650px;
+            /* width: 650px;
+             */
+             width: 100%;
             border: 2px solid black
         }
 
@@ -230,6 +232,30 @@
         .text{
             color: black;
         }
+        @media (max-width:360px) and (max-height:640px){
+            .container{
+                width: 100%;
+            }
+            .both-tab{
+                width: 100%;
+            }
+            .cont-2{
+                width: 100%;
+            }
+            .google{
+                width: 100%;
+            }
+            .whole{
+                width: 100%;
+            }
+            .card{
+                width: 100%;
+                margin-right: 15px;
+            }
+            #m-logo , #m-text , #plus-logo , #plus-text{
+                display: none;
+            }
+        }
        
     </style>
 </head>
@@ -269,7 +295,7 @@
         </div>
         <div class="cont-2">
 
-            <img src="google-logo.jpg" alt="logo" height="150px" width="300px" />
+            <img class="google-img" src="google-logo.jpg" alt="logo" height="150px" width="300px" />
 
             <input class="google" type="search" placeholder="  Search Google or type a URL" />
 
@@ -305,9 +331,9 @@
                 <a href="https://maquantum.github.io">   <div class="card">
                     <div class="circle-wrapper">
                         
-                        <img src="m-logo.jpg" alt="m" class="circle">
+                        <img id="m-logo" src="m-logo.jpg" alt="m" class="circle">
                     </div>
-                    <div class="text">MAquantum</div>
+                    <div id="m-text" class="text">MAquantum</div>
                 </div></a>
             </div>
             <div class="whole">
@@ -342,9 +368,9 @@
                 <a href="#">    <div class="card">
                     <div class="circle-wrapper">
                         
-                        <img src="plus.jpg" alt="plus" class="circle">
+                        <img id="plus-logo" src="plus.jpg" alt="plus" class="circle">
                     </div>
-                    <div class="text">Add Shortcut</div>
+                    <div id="plus-text" class="text">Add Shortcut</div>
                 </div></a>
             </div>
         </div>
