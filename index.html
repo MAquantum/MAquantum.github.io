@@ -2,9 +2,12 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            background: linear-gradient(90deg,#7b9dca, #ae52c5);
+            background: linear-gradient(90deg, #7b9dca, #ae52c5);
         }
 
         .container {
@@ -22,10 +25,11 @@
             /* padding-top: 7px; */
             /* padding-bottom: 7px; */
             border-radius: 50%;
-            width: 40%;
+            width: 50%;
             /* border-top-left-radius: 20px;
             border-bottom-right-radius: 20px; */
             margin-top: 20px;
+            height: 20%;
         }
 
         h2 {
@@ -34,22 +38,47 @@
             font-family: sans-serif;
         }
 
-        p {
+         .container p {
             font-size: 40px;
-            /* color: red; */
+            font-family: monospace;
+            border-radius: 20px;
+            text-shadow: 7px 4px 1px rgb(83, 60, 60);
         }
 
         ol li {
             font-size: 25px;
-            /* list-style: none; */
             margin-bottom: 15px;
-            /* color: black; */
         }
 
         li a {
             color: black;
             text-decoration: none;
         }
+        .contact-details {
+            font-size: 45px;
+            color: black;
+        }
+        footer{
+            background-color: rgb(185, 178, 178);
+            width: 100%;
+            display: flex;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            justify-content: space-around;
+        }
+        footer a{
+            text-decoration:none;
+        }
+        .contact{
+            font-size: 50px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            background-color:rgb(185, 178, 178) ;
+        }
+       
+        
+       
     </style>
 
 </head>
@@ -102,8 +131,23 @@
             <li>
                 <a href="enrollment-form.html">ENROLLMENT FORM</a>
             </li>
+            <li>
+                <a href="random-background.html"> RANDOM BACKGROUND</a>
+            </li>
         </ol>
+      
     </div>
+    <p class="contact">you can contact me!! </p>
+    <footer>
+        <a href="https://facebook.com/freecodecamp" class="contact-details" target="_blank">
+            <i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="https://github.com/MAquantum/MAquantum.github.io" target="_blank" class="contact-details"><i
+                class="fab fa-github"></i> GitHub</a>
+        <a href="https://twitter.com/freecodecamp" target="_blank" class="contact-details">
+            <i class="fab fa-twitter"></i> Twitter</a>
+
+        <a href="tel:9125273995" class="contact-details"><i class="fa fa-mobile"></i> Call me</a>
+    </footer>
 </body>
 
 </html>

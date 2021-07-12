@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        .cont{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        body::before{
+            background: url(https://source.unsplash.com/random)
+            no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+        h2{
+            color: red;
+        }
+        body{
+            color: white;
+            font-size: x-large;
+        background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1>welcome to coding world</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius excepturi vitae reprehenderit, soluta maxime quas commodi facere animi sint mollitia laboriosam nostrum ipsa maiores nisi saepe. Quaerat quam sint beatae aperiam quod debitis dolor?</p>
+        <h2>refresh to get more attractive background</h2>
+    </div>
+</body>
+</html>
