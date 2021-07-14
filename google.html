@@ -14,28 +14,28 @@
         }
 
         .container {
-            height: 650px;
+            /* height: 650px; */
             /* width: 650px;
              */
              width: 100%;
-            border: 2px solid black
+            /* border: 2px solid black */
         }
 
-        .new-tab {
+        /* .new-tab {
             height: 20px;
             width: 220px;
             padding-left: 3px;
             border-top: 2px solid black;
 
             border-bottom-right-radius: 5px;
-        }
+        } */
 
-        .both-tab {
+        /* .both-tab {
             display: flex;
 
-        }
+        } */
 
-        .tab {
+        /* .tab {
             display: flex;
             flex-direction: row-reverse;
             height: 20px;
@@ -43,35 +43,35 @@
 
             border-bottom-left-radius: 5px;
             background-color: rgb(51, 49, 49);
-        }
+        } */
 
-        .but-1 {
+        /* .but-1 {
 
             height: 15px;
             width: 15px;
             background-color: white;
             border-radius: 50%;
 
-        }
+        } */
 
-        .but-2 {
+        /* .but-2 {
             height: 15px;
             width: 15px;
             background-color: white;
 
 
-        }
+        } */
 
-        .but-3 {
+        /* .but-3 {
             height: 15px;
             width: 15px;
             background-color: white;
             box-shadow: 1.8px 1.8px 0px white;
 
 
-        }
+        } */
 
-        .all-but {
+        /* .all-but {
             margin-right: 5px;
             display: flex;
             flex-direction: row-reverse;
@@ -80,14 +80,14 @@
             height: 15px;
             width: 90px;
 
-        }
+        } */
 
-        .but-1:hover {
+        /* .but-1:hover {
             background-color: rgb(175, 170, 170);
             cursor: pointer;
-        }
+        } */
 
-        .but-2:hover {
+        /* .but-2:hover {
             background-color: rgb(175, 170, 170);
             cursor: pointer;
         }
@@ -95,19 +95,24 @@
         .but-3:hover {
             background-color: rgb(175, 170, 170);
             cursor: pointer;
-        }
+        } */
 
         .search-div {
             margin-top: 2px;
             display: flex;
             justify-content: center;
+            width: 100%;
         }
 
         .search-box {
-            width: 480px;
+            /* width: 480px; */
+            width: 100%;
             border: 1.8px solid rgb(4, 4, 185);
             border-radius: 20px;
             outline: none;
+            /* padding: 5px; */
+            padding-left: 10px;
+
         }
 
         .but-a {
@@ -136,6 +141,7 @@
         .but-a:hover {
             background-color: gray;
             cursor: pointer;
+            /* border-radius: 50%; */
         }
 
         .but-ab:hover {
@@ -145,6 +151,8 @@
 
         a {
             text-decoration: none;
+            color: black;
+            /* text-align: center; */
         }
 
         .nav-bar {
@@ -152,18 +160,20 @@
             display: flex;
             margin-top: 8px;
             height: 25px;
-            width: 650px;
+            width: 100%;
             border-bottom: 1px solid navy;
         }
 
         .nav-1 {
             padding-right: 25px;
             padding-left: 5px;
+            /* text-align: center; */
         }
 
         .nav-1:hover {
             cursor: pointer;
-            background-color: lightgray;
+            background-color: rgb(221, 219, 219);
+            border-radius: 15px;
 
         }
 
@@ -175,7 +185,7 @@
             align-items: center;
             flex-direction: column;
             height: 570px;
-            width: 650px;
+            /* width: 650px; */
 
 
         }
@@ -188,6 +198,7 @@
             border-color: gray;
             box-shadow: 3px 3px 0px lightgrey;
             font-size: large;
+            padding-left: 20px;
         }
 
         img {
@@ -200,8 +211,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 130px;
-            height: 120px;
+            width: 120px;
+            height: 110px;
 
         }
 
@@ -234,27 +245,30 @@
         }
         @media (max-width:450px) {
             .container{
-                width: 100%;
+                /* width: 97%; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             .both-tab{
-                width: 100%;
+                /* width: 100%; */
             }
             .cont-2{
-                width: 100%;
+                /* width: 100%; */
             }
             .google{
                 width: 100%;
             }
             .whole{
-                width: 100%;
+                /* width: 100%; */
             }
             .card{
                 width: 100%;
                 margin-right: 15px;
             }
-            #m-logo , #m-text , #plus-logo , #plus-text{
+            /* #m-logo , #m-text , #plus-logo , #plus-text{
                 display: none;
-            }
+            } */
         }
        
     </style>
@@ -262,7 +276,7 @@
 
 <body>
     <div class="container">
-        <div class="both-tab">
+        <!-- <div class="both-tab">
             <div class="new-tab">New Tab</div>
             <div class="tab">
                 <div class="all-but">
@@ -271,7 +285,7 @@
                     <button class="but-1"></button>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="search-div">
             <div class="all-but-2">
                 <button class="but-a"></button>
